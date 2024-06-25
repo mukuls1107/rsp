@@ -37,6 +37,7 @@ npm run build
 This will start the development server on http://localhost:8080.
 
 ## Project Structure
+```bash
 rsp-cafe/
 ├── dist/
 │   ├── bundle.js
@@ -51,13 +52,15 @@ rsp-cafe/
 ├── package.json
 ├── README.md
 └── webpack.config.js
+```
 
 
-dist/: Contains the bundled output files.
-src/: Contains the source code for the application.
-components/: Contains the JavaScript components.
-styles/: Contains the CSS files.
-index.js: Main entry point for the application.
-.gitignore: Specifies which files and directories to ignore in the git repository.
-package.json: Lists the project dependencies and scripts.
-webpack.config.js: Configuration file for Webpack.
+
+- **`dist/`**: Contains the bundled output files.
+- **`src/`**: Contains the source code for the application.
+  - **`components/`**: Contains the JavaScript components.
+  - **`styles/`**: Contains the CSS files.
+  - **`index.js`**: Main entry point for the application.
+- **`.gitignore`**: Specifies which files and directories to ignore in the git repository.
+- **`package.json`**: Lists the project dependencies and scripts.
+- **`webpack.config.js`**: Configuration file for Webpack.
