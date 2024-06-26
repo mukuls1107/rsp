@@ -1,14 +1,14 @@
 import createNav from "./components/navBar.js";
-import displayHome from "./components/homeSection.js";
-
+import loadContactPage from "./components/contactSection.js";
 import './styles/nav.css';
-import './styles/home.css'
-import './styles/contact.css'
+import './styles/contact.css';
 
 
 (function (){
     console.log("starting...");
  
     document.body.appendChild(createNav()); // Call createNav() to get the DOM node
-    document.body.appendChild(displayHome());
+    document.body.appendChild(loadContactPage())
 })()
+// console.log("Hello WOrld!");
+// console.log("damon bolte")

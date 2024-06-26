@@ -17,15 +17,19 @@ function createNav() {
 
     // Right div buttons
 
-    const home = document.createElement("span")
-    const about = document.createElement("span")
-    const contact = document.createElement("span")
+    const home = document.createElement("a")
+    const about = document.createElement("a")
+    const contact = document.createElement("a")
 
     // Content for right div's span
     home.innerText = "Home";
-    about.innerText = "About";
-    contact.innerText = "Contact";
+    home.href = "index.html"
 
+    about.innerText = "About";
+    about.href = "about.html";
+
+    contact.innerText = "Contact";
+    contact.href = "contact.html"
     // adding the spans in the right div
     // divRight.appendChild(home)
     // divRight.appendChild(about)

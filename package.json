@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch"
+    "ghpage": "git subtree push --prefix dist origin gh-pages",
+    "build": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,16 @@
   },
   "homepage": "https://github.com/mukul1107/rsp#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7"
   }
 }
